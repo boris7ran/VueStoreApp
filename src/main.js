@@ -6,10 +6,12 @@ Vue.use(VueRouter)
 
 import AppCustomers from '@/components/AppCustomers'
 import AppProducts from '@/components/AppProducts'
+import CustomerPurchases from '@/components/CustomerPurchases'
 
 const routes = [
   { path: '/customers', component: AppCustomers},
-  { path: '/products', component: AppProducts}
+  { path: '/products', component: AppProducts},
+  { path: '/customers/:id', component: CustomerPurchases}
 ]
 
 const router = new VueRouter({

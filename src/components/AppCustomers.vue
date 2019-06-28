@@ -28,7 +28,6 @@ export default {
 
     methods: {
         deleteCustomer(index) {
-            console.log(index);
             customerService.remove (this.customers[index])
         }
     }

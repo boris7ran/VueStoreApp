@@ -7,11 +7,13 @@ Vue.use(VueRouter)
 import AppCustomers from '@/components/AppCustomers'
 import AppProducts from '@/components/AppProducts'
 import CustomerPurchases from '@/components/CustomerPurchases'
+import SingleProduct from '@/components/SingleProduct'
 
 const routes = [
   { path: '/customers', component: AppCustomers},
   { path: '/products', component: AppProducts},
-  { path: '/customers/:id', component: CustomerPurchases}
+  { path: '/customers/:id', component: CustomerPurchases},
+  { path: '/products/:id', component: SingleProduct}
 ]
 
 const router = new VueRouter({

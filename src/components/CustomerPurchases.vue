@@ -15,6 +15,7 @@
 
 <script>
 import {customerService} from '@/services/CustomerService'
+import {productService} from '@/services/ProductService'
 
 export default {
 

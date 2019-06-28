@@ -7,6 +7,9 @@
                 {{ product.id }}. {{ product.name }} Quantity: {{ product.quantity}}
                 <button @click="handleIncrease(product)">+</button>
                 <button @click="handleDecrease(product)">-</button>
+                <router-link :to="routeToProduct(product)">
+                    <button>Buy</button>
+                </router-link>
             </li>
         </ul>
     </div>
@@ -30,6 +33,10 @@ export default {
 
         handleDecrease(product){
             productService.decrement(product);
+        },
+
+        routeToProduct(product){
+            return `/products/${product.id}`
         }
     },
 
